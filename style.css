@@ -769,3 +769,79 @@ url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
   text-align: center;
   padding: 1;
 }
+
+.button-64 {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  cursor: help;
+}
+
+.main-timeline {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.main-timeline::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  background: linear-gradient(
+    to bottom,
+    rgba(80, 80, 80, 0) 0%,
+    rgb(80, 80, 80) 8%,
+    rgb(80, 80, 80) 92%,
+    rgba(80, 80, 80, 0) 100%
+  );
+  top: 0;
+  bottom: 0;
+  left: 50.3%;
+  margin-left: -3px;
+}
+
+.text-wrapper {
+  padding: 10px 40px;
+  position: relative;
+  width: 51%;
+  box-sizing: border-box;
+}
+
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.right::after {
+  left: -11px;
+}
+
+.content {
+  padding: 15px 15px 15px 17px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+}
+
+.content h3 {
+  font-size: 14px;
+  color: #404040;
+  letter-spacing: 1px;
+}
+
+.content p {
+  font-weight: 300;
+  margin-top: 2px;
+  font-style: italic;
+}
