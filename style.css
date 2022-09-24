@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Arial;
+
 }
 body {
   background-image: linear-gradient(to right, #434343 0%, black 100%);
@@ -814,6 +816,19 @@ url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
   box-sizing: border-box;
 }
 
+.text-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  right: -9px;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 0 0 4px #59bf6a, inset 0 2px 0 rgb(0 0 0 / 8%),
+    0 3px 0 4px rgb(0 0 0 / 5%);
+  background: #ffffff;
+}
 
 .left {
   left: 0;
