@@ -825,9 +825,9 @@ url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
-  box-shadow: 0 0 0 4px #59bf6a, inset 0 2px 0 rgb(0 0 0 / 8%),
+  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgb(0 0 0 / 8%),
     0 3px 0 4px rgb(0 0 0 / 5%);
-  background: #ffffff;
+  background:  rgb(80, 80, 80) 92%;
 }
 
 .left {
