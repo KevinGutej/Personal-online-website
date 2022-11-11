@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <section class="header">
         <nav>
@@ -20,19 +22,28 @@
                 </ul>
             </div>
         </nav>
-        <div class = "contact">
-            <p class="details">Please contact me at:
-                <br>
-                <br>
-                Email: gkevinpl@gmail.com
-                <br>
-                <br>
-                Discord: ミ★ 𝘎𝘪𝘨𝘨𝘭𝘦𝘴 ★彡#2957
-                <br>
-                <br>
-                Telefone Number: +48 *** **** ***
-            </p>
-        </div>
+        <form action="#">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+            <br>
+            <br>
+            <label for="lang">Language</label>
+            <select name="languages" id="lang">
+                <option value="javascript">JavaScript</option>
+                <option value="php">PHP</option>
+                <option value="java">Java</option>
+                <option value="golang">Golang</option>
+                <option value="python">Python</option>
+                <option value="c#">C#</option>
+                <option value="C++">C++</option>
+                <option value="erlang">Erlang</option>
+            </select>
+            <input type="submit" value="Submit" />
+        </form>
     </section>
 </body>
+
 </html>
