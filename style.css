@@ -1017,5 +1017,25 @@ url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
 	padding: 10px 5px;
 	margin: 10px 5px;
 }
+.SignUp {
+  width: 100px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 15px;
 
+}
 
+.SignUpLink {
+  color: white;
+  text-decoration: none;
+}
+
+.SignUpLink::after {
+  text-decoration: overline;
+  transition: 3s;
+}
