@@ -501,15 +501,6 @@ h3 {
   color: white;
 }
 
-
-.information {
-  height: 600px;
-  width: 600px;
-  outline: solid black 4px;
-  background-color: yellow;
-  margin: auto;
-  border-radius: 5px;
-}
 .about {
   height: 600px;
   width: 600px;
@@ -1006,7 +997,7 @@ url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
   font-size: 12px;
 }
 
-.Btn {
+.LoginBtn {
   width: 100px;
 	background: #27AE60;
 	font-weight: bold;
@@ -1017,7 +1008,7 @@ url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
 	padding: 10px 5px;
 	margin: 10px 5px;
 }
-.SignUp {
+.Btn {
   width: 100px;
 	background: #27AE60;
 	font-weight: bold;
@@ -1035,4 +1026,10 @@ url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
   text-decoration: none;
 }
 
-
+.firstCode {
+  height: 250px;
+  width: 650px;
+  background-color: white;
+  position: absolute;
+  left: 50px;
+}
