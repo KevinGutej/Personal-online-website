@@ -1033,3 +1033,10 @@ url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
   position: absolute;
   left: 50px;
 }
+.secondCode {
+  height: 700px;
+  width: 730px;
+  background-color: white;
+  position: absolute;
+  left: 50px;
+}

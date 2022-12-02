@@ -22,8 +22,8 @@
                 </ul>
             </div>
         </nav>
-        <div class = "firstCode">
-            <code>   
+        <div class="firstCode">
+            <code>
                 long int fib(int x)
                     <ul></ul>
                     {
@@ -51,6 +51,92 @@
                     }
                     <ul></ul>
             </code>
+            <div class="secondCode">
+            <code>
+                struct Player
+                <ul></ul>
+                {
+                    <ul></ul>
+                    &ensp;&ensp;string nickname = "";
+                        <ul></ul>
+                        &ensp;&ensp;unsigned int level = 0;
+                        <ul></ul>
+                        &ensp;&ensp;float money = 0.0;
+                        <ul></ul>
+                        &ensp;&ensp;string clan = ""; 
+                        <ul></ul>
+                    };
+                    <ul></ul>
+                    
+                    struct Server
+                    <ul></ul>
+                    {
+                        <ul></ul>
+                        &ensp;&ensp;Player players[128] = {};
+                        <ul></ul>
+                        &ensp;&ensp;unsigned short int online = 0;
+                        <ul></ul>
+                    };
+                    <ul></ul>
+                    
+                    void display(Player p){
+                        <ul></ul>
+                        &ensp;&ensp;cout << p.nickname << " " << " level: " << p.level << " money: " << p.money << " clan: " << p.clan << endl;
+                        <ul></ul>
+                    }
+                    <ul></ul>
+                    
+                    int main()
+                    <ul></ul>
+                    {
+                        <ul></ul>
+                        &ensp;&ensp;Server server1;
+                        <ul></ul>
+                        
+                        &ensp;&ensp;Player rex;
+                        <ul></ul>
+                        &ensp;&ensp;Player wizard; 
+                        <ul></ul>
+                        
+                        &ensp;&ensp;rex.nickname = "Rexanimus";
+                        <ul></ul>
+                        &ensp;&ensp;rex.level = 1;
+                        <ul></ul>
+                        &ensp;&ensp;rex.money = 100.0;
+                        <ul></ul>
+                        &ensp;&ensp;rex.clan = "Brothers";
+                        <ul></ul>
+                        
+                        &ensp;&ensp;wizard.nickname = "Wiz";
+                        <ul></ul>
+                        &ensp;&ensp;wizard.level = 5;
+                        <ul></ul>
+                        &ensp;&ensp;wizard.money = 650.0;
+                        <ul></ul>
+                        &ensp;&ensp;wizard.clan = "Brothers";
+                        <ul></ul>
+                        
+                        &ensp;&ensp;server1.players[0] = rex;
+                        <ul></ul>
+                        &ensp;&ensp;server1.online = server1.online + 1;
+                        <ul></ul>
+                        &ensp;&ensp;server1.players[1] = wizard;
+                        <ul></ul>
+                        &ensp;&ensp;server1.online = server1.online + 1;
+                        <ul></ul>
+                        
+                        &ensp;&ensp;display(server1.players[0]); 
+                        <ul></ul>
+                        &ensp;&ensp;display(server1.players[1]);
+                        <ul></ul>
+                        &ensp;&ensp;cout << "Online Players: " << server1.online << endl;
+                        <ul></ul>
+                        &ensp;&ensp;return 0;
+                        <ul></ul>
+                    }
+                    <ul></ul>
+            </code>
+        </div>
         </div>
     </section>
 </body>
