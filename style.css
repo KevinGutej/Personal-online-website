@@ -1032,11 +1032,22 @@ url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
   background-color: white;
   position: absolute;
   left: 50px;
+
 }
 .secondCode {
   height: 700px;
   width: 730px;
   background-color: white;
   position: absolute;
-  left: 50px;
+  padding: 10px 5px;
+	margin: 10px 15px;
+}
+.thirdCode {
+  height: 410px;
+  width: 590px;
+  background-color: white;
+  position: absolute;
+  padding: 10px 5px;
+	margin: 10px 15px;
+  left: 750px;
 }

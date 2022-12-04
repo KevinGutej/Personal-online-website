@@ -52,7 +52,7 @@
                     <ul></ul>
             </code>
             <div class="secondCode">
-            <code>
+                <code>
                 struct Player
                 <ul></ul>
                 {
@@ -136,7 +136,56 @@
                     }
                     <ul></ul>
             </code>
-        </div>
+            </div>
+            <div class="thirdCode">
+                <code>
+                <ul></ul>
+                    int main()
+                    <ul></ul>
+                    {
+                        <ul></ul>
+                        &ensp;&ensp;int shot,number,amount_of_shots=0;
+                        <ul></ul>
+                        &ensp;&ensp;cout << "Please pick a shot between 1 and 100." << endl;
+                        <ul></ul>
+                        &ensp;&ensp;srand(time(NULL));
+                        <ul></ul>
+                        &ensp;&ensp;number = rand()%100+1;
+                        <ul></ul>
+                    }
+                    <ul></ul>
+                        while(shot!=number)
+                        <ul></ul>
+                        {
+                            <ul></ul>
+                            &ensp;&ensp;amount_of_shots++;
+                            <ul></ul>
+                            &ensp;&ensp;cout << "Guess the number!(It's your " << amount_of_shots << " try)" << endl;
+                            <ul></ul>
+                            &ensp;&ensp;cin >> shot;
+                            <ul></ul>
+                            &ensp;&ensp;if(shot==number)
+                            <ul></ul>
+                            &ensp;&ensp;&ensp;&ensp;cout << "You have won! (Shots" << amount_of_shots << " try)";
+                            <ul></ul>
+                            &ensp;&ensp;else if(shot < number)
+                            <ul></ul>
+                            &ensp;&ensp;&ensp;&ensp;cout << "Your shot is too low! " << endl;
+                            <ul></ul>
+                            &ensp;&ensp;else if(shot >number)
+                            <ul></ul>
+                            &ensp;&ensp;&ensp;&ensp;cout << "Your shot is too high !" << endl;
+                            <ul></ul>
+                            &ensp;&ensp;}
+                        <ul></ul>
+                        &ensp;&ensp;getchar();getchar();
+                        <ul></ul>
+                        &ensp;&ensp;return 0;
+                        <ul></ul>
+                    }
+                    <ul></ul>
+            </code>
+            </div>
         </div>
     </section>
 </body>
