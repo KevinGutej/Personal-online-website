@@ -1028,7 +1028,7 @@ url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
 
 .firstCode {
   height: 250px;
-  width: 650px;
+  width: 730px;
   background-color: white;
   position: absolute;
   left: 50px;
@@ -1039,15 +1039,21 @@ url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
   width: 730px;
   background-color: white;
   position: absolute;
-  padding: 10px 5px;
-	margin: 10px 15px;
+  margin: 10px;
 }
 .thirdCode {
-  height: 410px;
-  width: 590px;
+  height: 420px;
+  width: 600px;
   background-color: white;
   position: absolute;
-  padding: 10px 5px;
-	margin: 10px 15px;
   left: 750px;
+
+}
+.fourthCode {
+  height: 410px;
+  width: 600px;
+  background-color: white;
+  position: absolute;
+  left: 750px;
+  top: 700px;
 }
