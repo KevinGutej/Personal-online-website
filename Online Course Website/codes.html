@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a class="options" href="index.html">HOME</a></li>
+                    <li><a class="options" href="codes.html">CODES</a></li>
+                    <li><a class="options" href="hobby.html">HOBBY</a></li>
+                    <li><a class="options" href="about.html">ABOUT</a></li>
+                    <li><a class="options" href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="firstCode">
+            <code>
+                long int fib(int x)
+                    <ul></ul>
+                    {
+                        <ul></ul>
+                        &ensp;&ensp;&ensp;if(x==1||x==2)return 1;
+                        <ul></ul>
+                        &ensp;&ensp;&ensp;else return fib(x-1) + fib(x-2);
+                        <ul></ul>
+                        }
+                    <ul></ul>
+                    int main()
+                    <ul></ul>
+                    {
+                        <ul></ul>
+                        &ensp;&ensp;int x;
+                        <ul></ul>
+                        &ensp;&ensp;cout << "Podaj x [numer WYRAZU CIAGU]: ";
+                        <ul></ul>
+                        &ensp;&ensp;cin >> x;
+                        <ul></ul>
+                        &ensp;&ensp;cout << "Dla x =" << x << ", y = " << fib(x) << endl;
+                        <ul></ul>
+                        &ensp;&ensp;cout << "Zatem wyraz ciagu Fibonacciego to numer: " << x << " ,to: " << fib(x) << endl;
+                        <ul></ul>
+                    }
+                    <ul></ul>
+            </code>
+            <div class="secondCode">
+                <code>
+                struct Player
+                <ul></ul>
+                {
+                    <ul></ul>
+                    &ensp;&ensp;string nickname = "";
+                        <ul></ul>
+                        &ensp;&ensp;unsigned int level = 0;
+                        <ul></ul>
+                        &ensp;&ensp;float money = 0.0;
+                        <ul></ul>
+                        &ensp;&ensp;string clan = ""; 
+                        <ul></ul>
+                    };
+                    <ul></ul>
+                    
+                    struct Server
+                    <ul></ul>
+                    {
+                        <ul></ul>
+                        &ensp;&ensp;Player players[128] = {};
+                        <ul></ul>
+                        &ensp;&ensp;unsigned short int online = 0;
+                        <ul></ul>
+                    };
+                    <ul></ul>
+                    
+                    void display(Player p){
+                        <ul></ul>
+                        &ensp;&ensp;cout << p.nickname << " " << " level: " << p.level << " money: " << p.money << " clan: " << p.clan << endl;
+                        <ul></ul>
+                    }
+                    <ul></ul>
+                    
+                    int main()
+                    <ul></ul>
+                    {
+                        <ul></ul>
+                        &ensp;&ensp;Server server1;
+                        <ul></ul>
+                        
+                        &ensp;&ensp;Player rex;
+                        <ul></ul>
+                        &ensp;&ensp;Player wizard; 
+                        <ul></ul>
+                        
+                        &ensp;&ensp;rex.nickname = "Rexanimus";
+                        <ul></ul>
+                        &ensp;&ensp;rex.level = 1;
+                        <ul></ul>
+                        &ensp;&ensp;rex.money = 100.0;
+                        <ul></ul>
+                        &ensp;&ensp;rex.clan = "Brothers";
+                        <ul></ul>
+                        
+                        &ensp;&ensp;wizard.nickname = "Wiz";
+                        <ul></ul>
+                        &ensp;&ensp;wizard.level = 5;
+                        <ul></ul>
+                        &ensp;&ensp;wizard.money = 650.0;
+                        <ul></ul>
+                        &ensp;&ensp;wizard.clan = "Brothers";
+                        <ul></ul>
+                        
+                        &ensp;&ensp;server1.players[0] = rex;
+                        <ul></ul>
+                        &ensp;&ensp;server1.online = server1.online + 1;
+                        <ul></ul>
+                        &ensp;&ensp;server1.players[1] = wizard;
+                        <ul></ul>
+                        &ensp;&ensp;server1.online = server1.online + 1;
+                        <ul></ul>
+                        
+                        &ensp;&ensp;display(server1.players[0]); 
+                        <ul></ul>
+                        &ensp;&ensp;display(server1.players[1]);
+                        <ul></ul>
+                        &ensp;&ensp;cout << "Online Players: " << server1.online << endl;
+                        <ul></ul>
+                        &ensp;&ensp;return 0;
+                        <ul></ul>
+                    }
+                    <ul></ul>
+            </code>
+            </div>
+            <div class="thirdCode">
+                <code>
+                <ul></ul>
+                    int main()
+                    <ul></ul>
+                    {
+                        <ul></ul>
+                        &ensp;&ensp;int shot,number,amount_of_shots=0;
+                        <ul></ul>
+                        &ensp;&ensp;cout << "Please pick a shot between 1 and 100." << endl;
+                        <ul></ul>
+                        &ensp;&ensp;srand(time(NULL));
+                        <ul></ul>
+                        &ensp;&ensp;number = rand()%100+1;
+                        <ul></ul>
+                    }
+                    <ul></ul>
+                        while(shot!=number)
+                        <ul></ul>
+                        {
+                            <ul></ul>
+                            &ensp;&ensp;amount_of_shots++;
+                            <ul></ul>
+                            &ensp;&ensp;cout << "Guess the number!(It's your " << amount_of_shots << " try)" << endl;
+                            <ul></ul>
+                            &ensp;&ensp;cin >> shot;
+                            <ul></ul>
+                            &ensp;&ensp;if(shot==number)
+                            <ul></ul>
+                            &ensp;&ensp;&ensp;&ensp;cout << "You have won! (Shots" << amount_of_shots << " try)";
+                            <ul></ul>
+                            &ensp;&ensp;else if(shot < number)
+                            <ul></ul>
+                            &ensp;&ensp;&ensp;&ensp;cout << "Your shot is too low! " << endl;
+                            <ul></ul>
+                            &ensp;&ensp;else if(shot >number)
+                            <ul></ul>
+                            &ensp;&ensp;&ensp;&ensp;cout << "Your shot is too high !" << endl;
+                            <ul></ul>
+                            &ensp;&ensp;}
+                        <ul></ul>
+                        &ensp;&ensp;getchar();getchar();
+                        <ul></ul>
+                        &ensp;&ensp;return 0;
+                        <ul></ul>
+                    }
+                    <ul></ul>
+            </code>
+            </div>
+            <div class="fourthCode">
+                <code>
+                    <ul></ul>
+                    int main()
+                    <ul></ul>
+                    {
+                        <ul></ul>
+                        int s;
+                        <ul></ul>
+                        vector "<"int">" vec;
+                        <ul></ul>
+                        cout << "What's the size of your vector: ";
+                        <ul></ul>
+                        cin >> s;
+                        <ul></ul>
+                        vec.resize(s);
+                        <ul></ul>
+                        cout << "Size of your vector has been set as: " << vec.size() << endl;
+                        <ul></ul>
+                        for(int i=0;i<=s;i++)
+                        <ul></ul>
+                        {
+                            <ul></ul>
+                            cout << "Enter " << i << " number: ";
+                            <ul></ul>
+                            cin >> vec[i];
+                            <ul></ul>
+                        }
+                        <ul></ul>
+                        vec.push_back(15);
+                        <ul></ul>
+                        for(int i=0;i<=vec.size();i++)
+                        <ul></ul>
+                        {
+                            <ul></ul>
+                            cout << "Element number " << i << " :" << vec[i] << endl;
+                            <ul></ul>
+                    
+                        }
+                        <ul></ul>
+                        return 0;
+                        <ul></ul>
+                    }
+                    <ul></ul>
+                </code>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
